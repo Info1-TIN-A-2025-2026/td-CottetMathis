@@ -1,0 +1,30 @@
+tests:
+  - name: test 1 
+    stdin: "5.972E24 7.348E22 3.844E8"
+    stdout:
+      - contains: "F= 1.980834e+20 N"
+
+  - name: test 2
+    stdin: "5.972E24 1.988E30 1.496E11"
+    stdout:
+      - contains: "F= 3.538334e+22 N"
+  
+  - name: test 3
+    stdin: "5.972E24 4.2E5 6.7E5"
+    stdout:
+      - contains: "F= 3.726879e+08 N"
+
+  - name: test 4
+    stdin: "-1 4.2E5 6.7E5"
+    stdout:
+      - contains: "Erreur, m1 ne peut ne peut pas être égale ou inférieur à 0"
+
+  - name: test 4
+    stdin: "5.972E24 -1 6.7E5"
+    stdout:
+      - contains: "Erreur, m2 ne peut ne peut pas être égale ou inférieur à 0"
+
+  - name: test 4
+    stdin: "5.972E24 4.2E5 -1"
+    stdout:
+      - contains: "Erreur, la distance ne peut ne peut pas être égale ou inférieur à 0"
