@@ -1,0 +1,9 @@
+tests:
+  - name: nominal test 1
+    stdin: "-13 -3"
+    stdout:
+      - contains: "a/b = 4"
+      - contains: "a%b = -1"
+ 
+
+ 
