@@ -15,6 +15,7 @@
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.shellIntegration.decorationsEnabled": true,
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "assert.h": "c"
     },
 }

@@ -21,7 +21,7 @@ int main(int argc, const char *argv[])
 	int r = 0;
 	int t = 0;
 
-	c2r(x, y, &r, &t);
+	c2p(x, y, &r, &t);
 
 	printf("t=%d %d %d\n", h, m, s);
 }
